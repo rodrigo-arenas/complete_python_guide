@@ -14,12 +14,12 @@ class FixedFloat:
     #con @classmethod podemos especificarle que es un método que requiere el uso de la clase
     #En vez de self, se pasa cls
     @classmethod
-    def from_sum(cls,value1,value2):
+    def from_sum(cls, value1, value2):
         return cls(value1 + value2)
 
 
 number = FixedFloat(18.43673)
 print(number)
 
-new_number = FixedFloat.from_sum(16.433,43.346)
+new_number = FixedFloat.from_sum(16.433, 43.346)
 print(new_number)
