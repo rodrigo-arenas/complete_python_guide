@@ -1,5 +1,5 @@
 ##Archivo encargado de manejar la relación con la BD (Sin APIs)
-from Section_9_Context_Manager.database_connection import DatabaseConnection
+from Section_06_Context_Manager.database_connection import DatabaseConnection
 
 SERVER = 'MY_SERVER'
 DB = 'MY_BD'

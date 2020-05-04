@@ -25,4 +25,4 @@ users = [
 ]
 
 users = [User.from_dict(user) for user in users]
-users = map(User.from_dict, users) # Equivalente a la sintaxis anterior
+users = map(User.from_dict, users)  # Equivalente a la sintaxis anterior

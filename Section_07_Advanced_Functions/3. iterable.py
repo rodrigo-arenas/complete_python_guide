@@ -30,7 +30,7 @@ for i in FirstHundredGenerator():
 
 class AnotherIterable:
     def __init__(self):
-        self.cars = ['Ford','Fiesta']
+        self.cars = ['Ford', 'Fiesta']
 
     def __len__(self):
         return len(self.cars)
