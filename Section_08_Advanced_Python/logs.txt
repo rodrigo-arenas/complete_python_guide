@@ -1,0 +1,6 @@
+2020-05-05 20:48:58,212 INFO    :[7. logging.py:24] Info Message
+2020-05-05 20:48:58,212 WARNING :[7. logging.py:25] Warning Message
+2020-05-05 20:49:15,327 INFO    :[7. logging.py:24] Info Message
+2020-05-05 20:49:15,327 WARNING :[7. logging.py:25] Warning Message
+&d-05-2020 20:51:33 INFO    :[7. logging.py:25] Info Message
+&d-05-2020 20:51:33 WARNING :[7. logging.py:26] Warning Message
