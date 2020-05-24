@@ -1,10 +1,6 @@
-from multiprocessing import Process
 import time
+from concurrent.futures import ProcessPoolExecutor
 
-"""
-Cuándo se se requiere correr una comando después de otro, sino hacer cálculos en diferentes cores al mismo tiempo
-no se usa threads sino multiprocessing
-"""
 
 ####### SINGLE PROCESS
 
@@ -33,13 +29,10 @@ print('Single thread total time: ', time.time() - start, '\n\n')
 
 
 # With two processes, we can do them both at once...
-process = Process(target=complex_calculation)
-process.start()
-
 start = time.time()
 
-ask_user()
-
-process.join()  # this waits for the process to finish
+with ProcessPoolExecutor(max_workers=2) as pool:
+    pool.submit(complex_calculation)
+    pool.submit(complex_calculation)
 
 print('Two process total time: ', time.time() - start)
